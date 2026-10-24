@@ -1,0 +1,15 @@
+generated: '2026-10-23'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: feetmehealth.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Dec 22 09:45:38 2026 GMT
+  hsts: false
+domains:
+- domain: feetmehealth.com
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: false

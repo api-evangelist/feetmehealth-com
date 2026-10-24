@@ -1,25 +1,64 @@
 aid: feetmehealth-com
+
 name: Feetme
-description: 'Feetme is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by partech) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://testogel.biz/assets/img/og-cover.png
+
+description: 'Feetme is a health technology company focused on developing wearable devices and digital health solutions that monitor foot health and activity. Their platform integrates sensor data with analytics to provide insights for users and clinicians, aiming to improve mobility, prevent injuries, and support chronic condition management. The company emphasizes data privacy, user-friendly design, and partnerships with healthcare providers to deliver actionable health information.'
+
 url: https://raw.githubusercontent.com/api-evangelist/feetmehealth-com/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-23'
+
 modified: '2026-10-23'
+
 tags:
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- partech
+
 common:
+- type: Hosts
+  url: hosts/feetmehealth-com-hosts.yml
+- type: Vendors
+  url: vendors/feetmehealth-com-vendors.yml
+- type: DomainSecurity
+  url: security/feetmehealth-com-domain-security.yml
 - type: Website
   url: https://feetmehealth.com/
+
+apis: []
+
+x-backed-by:
+- partech
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-23'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://feetmehealth.com/
+    status: 200
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
